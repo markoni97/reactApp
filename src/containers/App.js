@@ -12,7 +12,6 @@ class App extends Component {
     ],
     showPersons: false
   };
-
   deletePersonHandler = (personIndex) => {
     //const persons = this.state.persons.slice();
     const persons = [...this.state.persons];
@@ -48,7 +47,7 @@ class App extends Component {
     if(this.state.showPersons){
       persons = <Persons 
           persons={this.state.persons}
-          click={this.deletePersonHandler}
+          clicked={this.deletePersonHandler}
           changed={this.nameChangedHandler}/>
       ;
     }
@@ -56,6 +55,7 @@ class App extends Component {
     return (
       <div className={classes.App}>
         <Cockpit 
+        title={this.props.appTitle}
         showPersons={this.state.showPersons}
         persons={this.state.persons}
         clicked={this.togglePersonsHandler}/>
