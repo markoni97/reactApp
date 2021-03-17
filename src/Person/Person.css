@@ -1,17 +1,16 @@
-/* .Person{
+.Person{
     width: 60%;
     margin: 16px auto;
     border: 1px solid #eee;
     box-shadow: 0 2px 3px #ccc;
     padding: 16px;
     text-align: center;
-} */
+}
 /* This means that the width of the container will be 450px 
 until the screen reaches the minimum width od 500px. Then the width of the container will decrease 
 */
-
-/* @media(min-width: 500px){
+@media(min-width: 500px){
     .Person{
         width: 450px;
     }
-} */
+}
