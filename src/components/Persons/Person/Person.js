@@ -16,7 +16,6 @@ import classes from './Person.css';
 //         width: 450px;
 //     }
 // `;
-
 const person = (props) => {
 
     return(
